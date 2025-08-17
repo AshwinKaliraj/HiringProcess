@@ -40,5 +40,33 @@ void hiringProcess() {
             }
         }
     }
+ cout << "Arrange candidate meeting\n";
+    cout << "Conduct pre-interview\n";
+    cout << "Setup interview questions\n";
+    cout << "Conduct interview\n";
+    cout << "Good reference? (y/n): ";
+    cin >> choice;
+
+    if (choice == 'n') {
+        cout << "Candidate not hired\n";
+        return;
+    }
+
+    cout << "Select candidate\n";
+    cout << "Evaluate pay rate\n";
+    cout << "Send employment offer\n";
+    cout << "Candidate confirms offer? (y/n): ";
+    cin >> choice;
+
+    if (choice == 'y')
+        cout << "Hire candidate\n";
+    else
+        cout << "Candidate not hired\n";
+}
+
+int main() {
+    hiringProcess();
+    return 0;
+}
 
    
