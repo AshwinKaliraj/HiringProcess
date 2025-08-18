@@ -2,6 +2,11 @@
 #include <string>
 using namespace std;
 
+int main() {
+    hiringProcess();
+    return 0;
+}
+
 void hiringProcess() {
     string jobDesc, classification, candidate;
     char choice;
@@ -64,9 +69,6 @@ void hiringProcess() {
         cout << "Candidate not hired\n";
 }
 
-int main() {
-    hiringProcess();
-    return 0;
-}
+
 
    
