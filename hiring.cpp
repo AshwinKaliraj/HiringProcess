@@ -2,17 +2,19 @@
 #include <string>
 using namespace std;
 
+void hiringProcess();
+
 int main() {
     hiringProcess();
     return 0;
 }
 
 void hiringProcess() {
-    string jobDesc, classification, candidate;
+    string job, classification, candidate;
     char choice;
 
     cout << "Define job description: ";
-    getline(cin, jobDesc);
+    getline(cin, job);
 
     cout << "Send crew request to HR\n";
     cout << "Is it a regular hiring process? (y/n): ";
